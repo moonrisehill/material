@@ -204,35 +204,15 @@ ul.thin li { margin: 0 0; padding: 0; }
 	outline: none;
 }
 
-#menu {
-	position: relative;
-	background-color: #282828;
-	font-size: 9pt;
-	height: 30px;
-	text-align: justify;
-	width: 100%;
-	top: 196px;
-	text-transform: uppercase;
-}
-
-#menu * {
-	display: inline;
-	text-decoration: none;
-	transition: all 0.1s ease-in-out 0s;
-	-moz-transition: all 0.1s ease-in-out 0s;
-	-webkit-transition: all 0.1s ease-in-out 0s;
-	-o-transition: all 0.1s ease-in-out 0s;
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 #menu li {
-	position: relative;
-	display: inline-block;
-	margin: 7px 0 auto 0;
-}
-
-#menu li a {
-	padding: 0.6em 1.5em;
-	color: #7a8182;
+    padding: 0;
+    margin: 0;
 }
 
 #menu li.active a {
@@ -244,11 +224,29 @@ ul.thin li { margin: 0 0; padding: 0; }
 	color: #fff;
 }
 
-#menu span {
+#menu a {
 	display: inline-block;
+	padding: 5px 1.991015600943em;
+}
+
+#menu {
+	font-weight: bold;
 	position: relative;
-	width: 100%;
-	height: 0;
+    display: flex;
+    justify-content: space-around;
+    top: 196px;
+	background-color:#282828;
+	height: 30px;
+	text-transform: uppercase;
+}
+
+#menu * {
+	display: inline;
+	text-decoration: none;
+	transition: all 0.1s ease-in-out 0s;
+	-moz-transition: all 0.1s ease-in-out 0s;
+	-webkit-transition: all 0.1s ease-in-out 0s;
+	-o-transition: all 0.1s ease-in-out 0s;
 }
 
 #index #nav_index a, #torrents #nav_torrents a, #labels #nav_labels a, #collage #nav_collages a, #requests #nav_requests a, #forums #nav_forums a, #chat #nav_irc a, #top10 #nav_top10 a, #rules #nav_rules a, #wiki #nav_wiki a, #staff #nav_staff a {
@@ -499,7 +497,7 @@ ul.thin li { margin: 0 0; padding: 0; }
 }
 
 #searchbars input {
-	width: 88px;
+	width: 126px;
 	padding: 0 0 0 4px;
 	font-family: PT Sans;
 	height: 18px;

@@ -1,0 +1,1292 @@
+@font-face { font-family: 'PT Sans'; src: url('https://raw.githubusercontent.com/moonrisehill/material/master/pt.woff2') format('woff2'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'PT Sans'; src: url('https://raw.githubusercontent.com/moonrisehill/material/master/ptb.woff2') format('woff2'); font-weight: bold; font-style: normal; }
+@font-face { font-family: 'PT Sans'; src: url('https://raw.githubusercontent.com/moonrisehill/material/master/pti.woff2') format('woff2'); font-weight: normal; font-style: italic; }
+@font-face { font-family: 'PT Sans'; src: url('https://raw.githubusercontent.com/moonrisehill/material/master/ptbi.woff2') format('woff2'); font-weight: bold; font-style: italic; }
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	width: 100%;
+}
+
+body {
+	background: #1d1d1d url('https://raw.githubusercontent.com/moonrisehill/material/master/bg.png');
+	font-family: PT Sans;
+	font-size: 10pt;
+}
+
+.forum_post pre {
+	max-width: 660px;
+	max-height: 500px;
+	overflow: auto;
+}
+
+table tbody, .main_column, .sidebar, .box, .thin, .pad, #threadpoll, #poll {
+	color: #b5b5b5;
+}
+
+a {
+	text-decoration: none;
+	border: none;
+	color: #456f7f;
+}
+
+table tbody a, .main_column a, .sidebar a, .box a {
+	color: #456f7f;
+}
+
+table tbody a:hover, .main_column a:hover, .sidebar a:hover, .box a:hover {
+	color: #7c9aa5;
+}
+
+a[onclick]:focus {
+	outline: 0;
+	background: transparent;
+}
+
+a[onclick]:active {
+	outline: 0;
+}
+
+a[onclick^="AddArtistField"]:focus, a[onclick^="AddArtistField"]:active {
+	outline: 0;
+	background: transparent !important;
+	padding: 0 !important;
+}
+
+h1, h3 {
+	margin: 5px 0;
+	color: #d1d1d1;
+	font-family: PT Sans;
+}
+
+h2 {
+	text-align: center;
+	font-size: 20px;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover {
+	color: #7c9aa5;
+}
+
+.size3, .size4, .size5, .size6, .size7 {
+	font-family: PT Sans;
+}
+
+li {
+	margin: 10px;
+}
+
+input {
+	padding: 2px 3px;
+	background: #0f0f0f;
+	border: none;
+}
+
+textarea {
+	padding: 2px 3px;
+	background: #0f0f0f;
+	border: none;
+	color: #ccc;
+}
+
+img {
+	border: none;
+}
+
+span.size1 { font-size: 0.75em; }
+span.size2 { font-size: 1em; }
+span.size3 { font-size: 1.25em; }
+span.size4 { font-size: 1.5em; }
+span.size5 { font-size: 1.75em; }
+span.size6 { font-size: 2em; }
+span.size7 { font-size: 2.25em; }
+span.size8 { font-size: 2.5em; }
+span.size9 { font-size: 2.75em; }
+span.size10 { font-size: 3em; }
+
+ul.thin { margin: 0 0 0 25px; padding: 0; }
+ul.thin li { margin: 0 0; padding: 0; }
+
+#wrapper {
+	padding: 0;
+}
+
+#header {
+	width: 988px;
+	height: 224px;
+	background: url('https://raw.githubusercontent.com/moonrisehill/material/master/header.png') no-repeat 0;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#content {
+	position: relative;
+	width: 988px;
+	margin: 0 auto;
+	color: #d1d1d1;
+	background: #2c2c2c;
+	padding: 26px 0;
+	overflow: hidden;
+}
+
+#content p {
+	margin-bottom: 6px ;
+}
+
+#footer {
+	margin-top: 40px;
+	width: 100%;
+	text-align: center;
+	padding: 1em 0;
+	color: #999;
+	background: #121212;
+	font-size: 8pt;
+}
+
+#footer:after {
+	content: url('https://raw.githubusercontent.com/moonrisehill/material/master/gazelle.png');
+}
+
+#disclaimer_container { color: #999; }
+
+#logo {
+	width: 206px;
+	height: 54px;
+	background: url('https://raw.githubusercontent.com/moonrisehill/material/master/logo.png') no-repeat top left;
+	margin: 89px 0 0 35px;
+	position: absolute;
+	z-index: 4;
+}
+
+#logo a {
+	border: none;
+	width: 206px;
+	height: 36px;
+	display: block;
+}
+
+#donation-outer {
+	position: absolute;
+	background: url('https://raw.githubusercontent.com/moonrisehill/material/master/donate-outer.png') no-repeat;
+	top: 128px;
+	margin-left: 83px;
+	width: 158px;
+	z-index: 5;
+}
+
+#donation-inner {
+	background: url('https://raw.githubusercontent.com/moonrisehill/material/master/donate-inner.png') no-repeat;
+	height: 15px;
+}
+
+#donation-link {
+	position: absolute;
+	top: 129px;
+	margin-left: 116px;
+	font-size: 11px;
+	font-style: italic;
+	text-transform: uppercase;
+	z-index: 6;
+}
+
+#donation-link a {
+	color: #ededed;
+	text-decoration: none;
+	z-index: 6;
+}
+
+#header a:active, #header a:focus, #logo a:hover, #logo a:active, logo a:focus {
+	border: none;
+	outline: none;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    padding: 0;
+    margin: 0;
+}
+
+#menu li.active a {
+	background-color: #456f7f;
+}
+
+#menu li a:hover {
+	background-color: #456f7f;
+	color: #fff;
+}
+
+#menu a {
+	display: inline-block;
+	padding: 5px 1.991015600943em;
+}
+
+#menu {
+	font-weight: bold;
+	position: relative;
+    display: flex;
+    justify-content: space-around;
+    top: 196px;
+	background-color:#282828;
+	height: 30px;
+	text-transform: uppercase;
+}
+
+#menu * {
+	display: inline;
+	text-decoration: none;
+	transition: all 0.1s ease-in-out 0s;
+	-moz-transition: all 0.1s ease-in-out 0s;
+	-webkit-transition: all 0.1s ease-in-out 0s;
+	-o-transition: all 0.1s ease-in-out 0s;
+}
+
+#index #nav_index a, #torrents #nav_torrents a, #labels #nav_labels a, #collage #nav_collages a, #requests #nav_requests a, #forums #nav_forums a, #chat #nav_irc a, #top10 #nav_top10 a, #rules #nav_rules a, #wiki #nav_wiki a, #staff #nav_staff a {
+	color: #efefef;
+}
+
+#userinfo {
+	position: absolute;
+	color: #fff;
+	width: 950px;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+#userinfo_username {
+	position: absolute;
+	top: 73px;
+	left: 42px;
+	width: 210px;
+	z-index: 3;
+}
+
+#userinfo_username #nav_userinfo {
+	margin: 0 0.1em;
+	vertical-align: middle;
+	padding: 0;
+	display: inline;
+	list-style-type: none;
+}
+
+#userinfo_username #nav_useredit, #userinfo_username #nav_logout {
+	position: relative;
+	top: 3px;
+	display: inline;
+	float: none;
+}
+
+#nav_useredit a {
+	text-indent: -9999px;
+	display: inline-block;
+	background: url('https://raw.githubusercontent.com/moonrisehill/material/master/edit.png') no-repeat;
+	width: 11px;
+	height: 11px;
+}
+
+#nav_logout a {
+	text-indent: -9999px;
+	display: inline-block;
+	background: url('https://raw.githubusercontent.com/moonrisehill/material/master/logout.png') no-repeat;
+	width: 11px;
+	height: 11px;
+}
+
+#alerts {
+	position: relative;
+	top: 40px;
+	width: 160px;
+	height: 80px;
+	text-align: center;
+	margin: 0 auto;
+	z-index: 1;
+}
+
+#alerts .alertbar {
+	position: absolute;
+	display: table;
+	text-align: center;
+	background-color: #e1e1e1;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 6px 10px;
+}
+
+#modbar {
+	position: absolute;
+	background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/alrt.png');
+	background-repeat: no-repeat;
+	background-size: 11px;
+	width: 11px;
+	height: 11px;
+	overflow: hidden;
+	text-align: center;
+	color: transparent;
+	top: 89px;
+	margin-left: 27px;
+	transition: all 0.5s ease-in-out 0s;
+	z-index: 10;
+}
+
+#modbar:hover {
+	padding: 10px 7px 0 0;
+	height: auto;
+	min-height: 26px;
+	width: 205px;
+	background-size: 0%;
+	background-color: #e1e1e1;
+	color: #456f7f;
+}
+
+#modbar .alertbar { width: 200px; }
+#modbar .alertbar a { color: inherit; }
+#modbar .alertbar a:hover { color: #7c9aa5; }
+#modbar .alertbar:nth-child(2n+1) { float: right; }
+
+#modbar_m { position: relative; top: 13px; width: 240px; float: right; margin-right: 38px; z-index: 2; }
+#modbar_m .alertbar { text-align: center; background-color: #e1e1e1; padding: 6px; color: #456f7f; }
+
+#userinfo_stats {
+	position: absolute;
+	top: 70px;
+	right: 0;
+	width: 220px;
+	height: 60px;
+	padding: 10px;
+	background-color: rgba(250,255,237,0.1);
+	color: #efefef;
+	z-index: 2;
+}
+
+#userinfo_stats li { display: block !important; position: absolute; width: 110px; }
+#userinfo_stats li:nth-child(even) { border: none !important; }
+#stats_seeding, #stats_ratio { top: 9px; }
+#stats_ratio { color: #c5c5c5; }
+#fl_tokens span a { color: #efefef; }
+#stats_leeching, #stats_required { top: 32px; }
+#stats_ratio, #stats_required { left: 130px; }
+#fl_tokens { top: 55px; }
+.my_demBuffer { left: 130px; top: 55px; }
+#stats_buffer { top: 55px; }
+
+.r00 { color: #ff0000; }
+.r01 { color: #ff1300; }
+.r02 { color: #ff1300; }
+.r03 { color: #ff2600; }
+.r04 { color: #ff4c00; }
+.r05 { color: #ff5e00; }
+.r06 { color: #ff5e00; }
+.r07 { color: #ff7100; }
+.r08 { color: #ff9700; }
+.r09 { color: #ffaa00; }
+.r10 { color: #74c42e; }
+.r20 { color: #418b00; }
+.r50 { color: #16b149; }
+.r99 { color: #418b00; }
+
+#nav_userinfo a {
+	max-width: 176px;
+	height: 60px;
+	display: block;
+}
+
+#userinfo img {
+	margin-top: -5px;
+}
+
+#userinfo ul li {
+	margin: 0;
+	vertical-align: middle;
+	padding: 0;
+	float: left;
+	list-style-type: none;
+}
+
+.username {
+	color: #456f7f !important;
+	font-weight: bold;
+}
+
+#userinfo a {
+	color: #c5c5c5;
+}
+
+#userinfo b a {
+	font-weight: normal;
+	font-size: 0.9em;
+}
+
+#userinfo_minor, #userinfo #userinfo_major {
+	position: fixed;
+	right: 50%;
+	margin-right: -369px;
+	background-color: #303030;
+	color: #d1d1d1;
+	height: 28px;
+	overflow: hidden;
+	text-transform: none;
+	z-index: 12;
+}
+
+#userinfo_minor:hover, #userinfo #userinfo_major:hover {
+	height: auto;
+}
+
+#userinfo #userinfo_major {
+	margin-right: -494px;
+	width: 125px;
+}
+
+#userinfo #userinfo_minor li, #userinfo #userinfo_major li {
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	width: 125px;
+	clear: right;
+	float: right;
+	transition: all 0.1s ease-in-out 0s;
+	-moz-transition: all 0.1s ease-in-out 0s;
+	-webkit-transition: all 0.1s ease-in-out 0s;
+	-o-transition: all 0.1s ease-in-out 0s;
+}
+
+#userinfo #userinfo_minor li a, #userinfo #userinfo_major li a {
+	display: inline-block;
+	padding: 5.5px;
+	margin-left: 25px;
+	color: #d1d1d1;
+}
+
+#userinfo #userinfo_minor #nav_inbox { margin-top: 28px; background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/pm.png'); }
+#userinfo #userinfo_minor #nav_staffinbox { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/staffpm.png'); }
+#userinfo #userinfo_minor #nav_uploaded { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/uploads.png'); }
+#userinfo #userinfo_minor #nav_bookmarks { position: absolute; background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/bookmarks.png'); }
+#userinfo #userinfo_minor #nav_notifications { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/noti.png'); }
+#userinfo #userinfo_minor #nav_subscriptions { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/sub.png'); }
+#userinfo #userinfo_minor #nav_friends { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/friends.png'); }
+#userinfo #userinfo_minor #nav_comments { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/comments.png'); }
+
+#userinfo #userinfo_major #nav_upload { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/upload.png'); }
+#userinfo #userinfo_major #nav_better { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/better.png'); }
+#userinfo #userinfo_major #nav_invite { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/invites.png'); }
+#userinfo #userinfo_major #nav_bonus { width: 153px; overflow: hidden; text-overflow: ellipsis; -o-text-overflow: ellipsis; }
+#userinfo #userinfo_major #nav_hnr { margin-right: -4px; padding-left: 4px; width: 125px; overflow: hidden; }
+#nav_hnr a { margin-left: 0 ! important; }
+
+#userinfo #userinfo_minor li:hover, #userinfo #userinfo_major li:hover { background-color: #456f7f ; }
+
+#searchbars {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	width: 100%;
+	background: #303030;
+	padding: 5px 0;
+	box-shadow: 0 1px 5px rgba(29,29,29,0.7);
+	z-index: 11;
+}
+
+#searchbars input {
+	width: 126px;
+	padding: 0 0 0 4px;
+	font-family: PT Sans;
+	height: 18px;
+	background: #1d1d1d;
+	color: #7e827a;
+	text-transform: lowercase;
+	font-size: 12px;
+	text-indent: 2px;
+}
+
+#searchbars ul {
+	position: relative;
+	width: 994px;
+	text-align: center;
+	margin: 0 auto;
+	list-style: none;
+	display: block;
+}
+
+.breadcrumbs {
+	text-align: center !important;
+}
+
+#searchbars ul li {
+	position: relative;
+	display: inline;
+	float: left;
+	margin: 0;
+	padding-right: 10px;
+	list-style: none;
+}
+
+#searchbars ul li ul {
+	position: absolute;
+	display: block;
+	top: 1em;
+	left: 0;
+	z-index: 7;
+	border: 1px solid #eee;
+	width: 12em;
+	margin-top: 12px;
+}
+
+#searchbars ul li ul li {
+	margin: 1px 0 1px 4px;
+	padding: 0;
+	display: block;
+	width: 100%;
+	cursor: pointer;
+}
+
+#searchbars ul li ul li.highlight {
+	color: #86b2c2;
+}
+
+#searchbars ul li form {
+	display: inline;
+	margin: 0;
+}
+
+#cat-selector ul {
+	width: 100%;
+}
+
+#cat-selector ul li {
+	display: inline;
+	width: 12em;
+	height: 1em;
+	float: left;
+}
+
+#debug_report pre {
+	width: 890px;
+	overflow: auto;
+}
+
+td.cats_col, td.center.cats_col { border-right: none; }
+table.grouping>tbody>tr.torrent>td:first-child+td+td, table.no_grouping>tbody>tr.torrent>td:first-child+td, table.grouping>tbody>tr.group>td:first-child+td+td, table.grouping>tbody>tr.colhead>td:first-child+td+td, table.no_grouping>tbody>tr.group>td:first-child+td, table.no_grouping>tbody>tr.colhead>td:first-child+td { border-left: none; }
+.last_read {width: 15px; height: 15px; background: url('https://raw.githubusercontent.com/moonrisehill/material/master/go_last_read.png') no-repeat center center; margin-left: 5px;}
+.last_read a { border: none; width: 100%; height: 100%; display: block; }
+.last_read a:hover { border: none; }
+.last_read a:active, .last_read a:focus { outline: 0; }
+
+.hidden {
+	position: absolute;
+	left: -10000px;
+	display: none !important;
+}
+
+input.hidden {
+	position: absolute;
+	display: none;
+}
+
+.thin {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.linkbox {
+	text-align: center;
+	padding: 10px;
+}
+
+.linkbox a:hover {
+	color: #7c9aa5
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
+
+.min_padding {
+	padding: 0;
+	margin: 0 0;
+}
+
+p.min_padding {
+	margin: 2px 0;
+}
+
+.pad {
+	padding: 1em;
+}
+
+.sidebar .pad {
+	padding: 10px;
+}
+
+.sidebar .box {
+	padding-bottom: 1px;
+}
+
+.vertical_space {
+	margin-bottom: 10px;
+}
+
+.box {
+	background: #1d1d1d;
+	margin-bottom: 16px;
+}
+
+.box2 {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.pad h3, .pad h4, .padbox h3, .padbox h4 {
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.sidebar {
+	float: right;
+	width: 240px;
+}
+
+.body {
+	padding: 10px;
+	width: 98%;
+	word-wrap: break-word;
+}
+
+.main_column {
+	width: 680px;
+}
+
+.main_column table {
+	margin-bottom: 16px;
+	width: 100%;
+}
+
+.main_column .box .body {
+	font-size: 12px;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+
+.tags {
+	padding: 0 0 0 20px;
+	font-style: italic;
+}
+
+.tags a {
+	color: #868f8f;
+}
+
+.tags a:hover {
+	color: #97aaaa;
+}
+
+.noborder {
+	border: none;
+}
+
+ul.nobullet {
+	list-style-type: none;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border: none;
+}
+
+tr {
+	border: none;
+	background-color: #1d1d1d;
+}
+
+tr.rowa {
+	background-color: #1d1d1d;
+}
+
+tr.rowb {
+	background-color: #222222;
+}
+
+td, th {
+	border: none;
+	padding: 6px;
+	text-align: left;
+}
+
+.torrent_table .colhead_dark,.torrent_table .colhead{
+	background-color: #456f7f;
+}
+
+.colhead, .colhead_dark, .head {
+	background: #456f7f;
+	color: #d1d1d1;
+	padding: 2px 6px;
+	font-size: 14px;
+}
+
+.comment .head {
+	text-align: left !important;
+	text-transform: none;
+}
+
+.box .head .time {
+	font-size: 12px;
+}
+
+.colhead a, .colhead_dark a, .head a {
+	color: #d1d1d1;
+}
+
+.colhead_dark a img:active, .colhead_dark a img:focus {
+	outline: 0;
+}
+
+td.colhead, .colhead td, .colhead th {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.colhead .sign, .colhead_dark .sign {
+	padding: 0 8px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 14px;
+}
+
+td.label {
+	text-align: right;
+	width: 180px;
+}
+
+table.slice {
+	margin-top: -1px;
+}
+
+tr.peer_list {
+	font-size: 12px;
+}
+
+tr.peer_list td {
+	padding: 2px 0 2px 2px;
+}
+
+.error_message {
+	border: 1px solid #666;
+	padding: 3px 0;
+	background-color: #af2525;
+	text-align: center;
+	color: white;
+}
+
+.save_message {
+	border: 1px solid #666;
+	padding: 3px 0;
+	background-color: #f4e649;
+	text-align: center;
+	color: #492802;
+}
+
+.elem_error {
+	border: 3px solid #b00d0d;
+}
+
+.hide {
+	display: none;
+}
+
+.show_torrents {
+	width: 28px;
+	height: 28px;
+	background: url('https://raw.githubusercontent.com/moonrisehill/material/master/show.png') no-repeat center center;
+	-moz-opacity: 0.5;
+	opacity: .50;
+	filter: alpha(opacity=50);
+}
+
+.hide_torrents {
+	width: 28px;
+	height: 28px;
+	background: url('https://raw.githubusercontent.com/moonrisehill/material/master/hide.png') no-repeat center center;
+	-moz-opacity: 0.5;
+	opacity: .50;
+	filter: alpha(opacity=50);
+}
+
+.show_torrents_link {
+	border: none;
+	width: 28px;
+	height: 28px;
+	display: block;
+}
+
+.torrent_table a:active img, .torrent_table a:focus img {
+	background-color: transparent !important;
+}
+
+.filter_torrents {
+	width: 750px;
+	margin: auto;
+}
+
+.filter_torrents .submit {
+	text-align: right;
+	padding-top: 5px;
+}
+
+#content form.search_form + .torrent_table {
+	margin-top: 20px;
+}
+
+#requests .cat_list tr td {
+	border: none;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.torrent_table tr {
+	vertical-align: top;
+}
+
+.torrent_table tr.group {
+	background-color: #252525;
+}
+.torrent_table tr.group_torrent {
+	border-bottom: 1px solid #2c2c2c;
+}
+
+#torrent_table tr.group, #torrents_album  tr.group, #discog_table  tr.group {
+	background-color: #252525;
+}
+#torrent_table tr.group_torrent, #torrents_album tr.group_torrent, #discog_table tr.group_torrent {
+	background-color: #1d1d1d;
+}
+
+tr.group_torrent td, tr.group td, tr.torrent td { color: #646464; }
+
+.torrent_table div.tags {
+	font-weight: normal;
+}
+
+.torrent_table tr .center {
+	vertical-align: middle;
+	text-align: center;
+}
+
+.group_torrent span {
+	float: right;
+}
+
+.torrent span {
+	font-weight: normal;
+	float: right;
+}
+
+.nobr {
+	white-space: nowrap;
+}
+
+.unread_locked_sticky { background: url('https://raw.githubusercontent.com/moonrisehill/material/master/locked_sticky_unread.png') no-repeat center center; }
+.read_locked_sticky { background: url('https://raw.githubusercontent.com/moonrisehill/material/master/locked_sticky_read.png') no-repeat center center; }
+.read_sticky { background: url('https://raw.githubusercontent.com/moonrisehill/material/master/sticky_read.png') no-repeat center center; }
+.unread_sticky { background: url('https://raw.githubusercontent.com/moonrisehill/material/master/sticky_unread.png') no-repeat center center; }
+.unread_locked { background: url('https://raw.githubusercontent.com/moonrisehill/material/master/locked_unread.png') no-repeat center center; }
+.read_locked { background: url('https://raw.githubusercontent.com/moonrisehill/material/master/locked_read.png') no-repeat center center; }
+.unread { background: url('https://raw.githubusercontent.com/moonrisehill/material/master/unread.png') no-repeat center center; }
+.read { background: url('https://raw.githubusercontent.com/moonrisehill/material/master/read.png') no-repeat center center; }
+
+td.avatar {
+	border-right: 1px solid #2c2c2c;
+}
+
+table.forum_unread {
+	border: 2px solid #456f7f;
+}
+
+td.avatar {
+	width: 150px;
+	padding: 0;
+}
+
+#quickreplypreview .forum_post {
+	padding: 5px;
+}
+
+strong.quoteheader{
+	color: #444;
+}
+
+blockquote {
+	margin: 10px;
+	padding: 10px;
+	border: 1px dashed #646464;
+	background: rgba(255,255,255,0.05);
+}
+
+tr.unreadpm {
+	background-color: #353535;
+}
+
+.collage_images li {
+	vertical-align: middle;
+}
+
+.permission_head {
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.permissions {
+	width: 930px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.permission_container {
+	float: left;
+	width: 300px;
+	padding: 5px;
+}
+.permission_container input {
+	margin: 0 3px 5px 0;
+	vertical-align: top;
+}
+
+.submit_container {
+	clear: both;
+	text-align: right;
+}
+
+ul .invitetree {
+	margin: 0 0 0 25px;
+}
+
+.invitetree li {
+	list-style: none;
+	margin: 10px 2px;
+}
+
+.head a:hover, .colhead a:hover, .colhead_dark a:hover, .head a:focus, .colhead a:focus, .colhead_dark a:focus {
+	color: #fff;
+}
+
+.user_options .options_list li {
+	margin: 0;
+}
+
+.poll { padding: 10px; }
+.poll li { margin-top: 0; clear: both; }
+.poll .graph span { display: block; height: 12px; float: left; }
+.poll .graph .left_poll, .poll .graph .center_poll, .poll .graph .right_poll { background: #456f7f; }
+
+.curtain {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #111;
+	-moz-opacity: 0.9;
+	opacity: .90;
+	filter: alpha(opacity=90);
+	z-index: 12;
+}
+
+.lightbox {
+	position: fixed;
+	text-align: center;
+	top: 5%;
+	left: 5%;
+	width: 90%;
+	height: 90%;
+	padding: 0;
+	overflow: auto;
+	z-index: 13;
+}
+
+.lightbox img {
+	max-width: 100%;
+	max-height: 100%;
+	background-color: transparent;
+	z-index: 14;
+}
+
+input[type=button], input[type=submit] {
+	background: #0f0f0f;
+	display: inline-block;
+	padding: 3px 6px 4px;
+	margin: 3px;
+	color: #456f7f;
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+}
+
+input[type=text], input[type="password"] {
+	display: inline-block;
+	padding: 3px;
+	margin-left: 3px;
+	text-decoration: none;
+	border: none;
+	color: #d1d1d1;
+}
+
+#quickpost input[type=text], .box_search input[type=text], #AddArtists input[type=text], .add_torrent_container input[type=text], .add_torrent_container input[type=text], .box_addtag input[type=text], .pad .search_form input[type=text], .edit_form input[type=text], .rename_form input[type=text], .merge_form  input[type=text], #compose input[type=text], .add_form input[type=text]{
+	background: #0f0f0f;
+	color: #b5b5b5;
+}
+
+input[type=text]:active, input[type="search"]:active, input[type="password"]:active { top: 1px; }
+
+input[disabled=disabled], select[disabled=disabled], textarea[disabled=disabled] { background: #1d1d1d; color: #456f7f; }
+
+select { background: #353535; display: inline-block; margin-left: 3px; color: #456f7f; text-decoration: none; border: 0; font-family: PT Sans; }
+option { background: #353535; padding: 1px; margin: 0; color: #456f7f; text-decoration: none; border: 0; font-family: PT Sans; }
+
+#AddArtists {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#logchecker .thin, #logchecker h3, .log_outer, .log_outer h3 {
+	color: #444;
+}
+
+.spellcheck {
+	margin: 10px 0;
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+ul, ol{
+	list-style-position: inside;
+}
+
+tr.torrent .bookmark a:before, tr.torrent .bookmark a:after {
+	color: #646054;
+}
+
+#requests .forum_post textarea {
+	max-width: 409px;
+}
+
+.field_div {
+	margin-bottom: 10px;
+}
+
+.edit_changelog textarea {
+	width: 600px;
+}
+
+.autocomplete-suggestions {
+	background: #303030;
+	color: #d1d1d1 !important;
+	border: none;
+}
+
+.autocomplete-selected {
+	background: rgba(225,225,225,0.2);
+	color: #eaeaea !important;
+}
+
+.autocomplete-suggestions strong {
+	font-weight: normal;
+	color: #456f7f !important;
+}
+
+div[class~=tooltipster-base] {
+	background-color: #eaeaea;
+	border: none;
+	color: #444;
+}
+
+div[class~=tooltipster-content] a {
+	color: #456f7f;
+}
+
+#settings_sections #submit, #settings_sections #settings_search {
+	margin: 3px 0;
+}
+
+.vote_tag_down, .vote_artist_down, .vote_album_down, .small_downvote, .small_downvoted {
+	color: indianred !important;
+}
+
+div.sidebar #event_div {
+	margin-left: -50px;
+}
+
+form textarea, form input {
+	font-family: PT Sans;
+	font-size: 12px;
+	max-width: 100%;
+	color: #d1d1d1;
+}
+
+#staffnotes {
+	width: 100%;
+	color: #a5a5a5;
+	font-size: 11px;
+}
+
+ul.collage_images {
+	width: 100%;
+}
+
+ul.collage_images li, ul.collage_images img {
+	width: 136px;
+	height: 136px;
+}
+
+ul.collage_images li a {
+	height: 136px;
+}
+
+input[type="checkbox"] { position: relative; display: inline-block; padding: 6px; border: 1px solid #3b3b3b; -webkit-appearance: none; }
+input[type="checkbox"]:checked:after { position: absolute; top: -1px; left: 1px; color: #456f7f; content: '\2714'; font-size: 12px; }
+input[type="radio"] { position: relative; top: 3px; display: inline-block; padding: 6px; border: 1px solid #3b3b3b; border-radius: 50px; -webkit-appearance: none; }
+input[type="radio"]:checked:after { position: absolute; top: 3px; left: 3px; width: 6px; height: 6px; border-radius: 50px; background: #456f7f; content: ' '; }
+
+#release_list td label, #format_list td label, #bitrate_list td label, #media_list td label {
+	padding-left: 2px;
+	padding-right: 14px;
+}
+
+.label_info:hover {
+	background: #252525;
+}
+
+.eventTitle {
+	color: #456f7f;
+	text-align: center;
+	font-size: 1.5em;
+	letter-spacing: 2px;
+}
+
+.typeOfTorrentsAffected {
+	text-align: center;
+	font-size: 1.1em;
+}
+
+.eventHR {
+	border: 0;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+	background-image: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+	background-image: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+	background-image: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
+}
+
+.affectedByEventList {
+	list-style-type: none;
+	text-align: center;
+}
+
+.affectedByEventList ul {
+	display: none;
+}
+
+.affectedByEventList li {
+	font-size: 1.2em;
+}
+
+.affectedByEventList li ul li {
+	font-size: 0.9em;
+	text-align: left;
+}
+
+.affectedByEventList li:hover ul {
+	display: block;
+}
+
+.eventBonusList {
+	list-style-type: none;
+	text-align: center;
+}
+
+.eventBonusItem {
+	font-size: 1.1em;
+	line-height: 1.2em;
+}
+
+.eventTime {
+	text-align: center;
+}
+
+.countdown_row {
+	clear: both;
+	width: 100%;
+	padding: 0 2px;
+	text-align: center;
+}
+
+.countdown_show3 .countdown_section {
+	width: 32.5%;
+}
+
+.countdown_show4 .countdown_section {
+	width: 24.5%;
+}
+
+.countdown_section {
+	display: block;
+	float: left;
+	font-size: 100%;
+	text-align: center;
+}
+
+.countdown_amount {
+	color: #456f7f;
+	font-size: 200%;
+}
+
+#content, #searchbars input, .box, .box2, .colhead, .colhead_dark, .head, #userinfo_stats, #menu, #menu *, #alerts .alertbar, #modbar_m .alertbar, #modbar, select { -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px; }
+table tr:first-child td:first-child { border-top-left-radius: 2px; border-bottom-left-radius: 2px; -webkit-border-top-left-radius: 2px; -webkit-border-bottom-left-radius: 2px; -moz-border-radius-topleft: 2px; -moz-border-radius-bottomleft: 2px; }
+table tr:first-child td:last-child { border-top-right-radius: 2px; border-bottom-right-radius: 2px; -webkit-border-top-right-radius: 2px; -webkit-border-bottom-right-radius: 2px; -moz-border-radius-topright: 2px; -moz-border-radius-bottomright: 2px; }
+table tr:last-child td:first-child { border-bottom-left-radius: 2px; -webkit-border-bottom-left-radius: 2px; -moz-border-radius-bottomleft: 2px; }
+table tr:last-child td:last-child { border-bottom-right-radius: 2px; -webkit-border-bottom-right-radius: 2px; -moz-border-radius-bottomright: 2px; }
+#paster, button, input[type=button], input[type=submit] { -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; }
+
+#noty_bottomRight_layout_container li { background-image: none !important; background-color: #456f7f !important; border: none !important; bottom: 20px; right: 20px; position: fixed; list-style-type: none; z-index: 15; }
+.noty_buttons { border: none !important; background-color: #333 !important; }
+#content #tags p a, #content #labels p a, #content #artists p a { margin-left: 10px; color: #b5b5b5; }
+#purchase_history table, #torrent_details table { width: 100%; }
+td.edition_info a { color: #899d9e; }
+td.edition_info a:hover { color: #a0b0b1; }
+code { color: grey; }
+#paster { background: #0f0f0f; display: inline-block; padding: 3px 6px 4px; color: #456f7f; text-decoration: none; border: none; cursor: pointer; }
+button { background: #353535; display: inline-block; margin-bottom: 3px; padding: 0 4px 1px 3px; color: #456f7f; text-decoration: none; border: none; cursor: pointer; }
+.box_tags .brackets:before, .box_tags .brackets:after { content: '\00a0' }
+.news_post img { max-width: 600px; }
+.sidebar .box.pad { padding: 0.5em; }
+#rules .box { margin: 0; }
+#l_a_box td { border: none !important; }
+div.box.center { padding: 3px 0; margin-bottom: 10px; }
+.sidebar div:nth-child(1) .pad { text-align: center; }
+#users_thank { display: inline-block; padding: 0 14px; }
+#settings_sections.fixed { position: fixed; top: 50px; }
+.box_image.box_image_avatar { padding: 0; }
+#concertsbody { padding-bottom: 1px; }
+#upload_table table.thin { margin-top: auto !important; table-layout: auto !important; width: 100% !important; }
+#upload .thin p { margin: 10px 0 12px 0;}
+#torrents .box.pad { margin-top: 22px; }
+.header, #torrents form.search_form, #requests form.search_form { margin-bottom: 22px; }
+.head { height: 17px !important; }
+.box2, #rules .sidebar .box { margin-bottom: 16px; }
+::-webkit-input-placeholder { color: #888; }
+:-moz-placeholder { color: #888; }
+::-moz-placeholder { color: #888; }

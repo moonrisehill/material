@@ -119,10 +119,13 @@ ul.thin li { margin: 0 0; padding: 0; }
 
 #header {
 	width: 988px;
-	height: 224px;
+	height: 256px;
 	background: url('https://raw.githubusercontent.com/moonrisehill/material/master/header.png') no-repeat 0;
+	background-position-y: 0;
 	margin: 0 auto;
+	top: 28px;
 	padding: 0;
+	position: relative;
 }
 
 #content {
@@ -216,15 +219,15 @@ ul.thin li { margin: 0 0; padding: 0; }
 
 #menu a {
 	display: inline-block;
-	padding: 5px 1.991015600943em;
+	padding: 6px 1.991015600943em;
 }
 
 #menu {
 	font-weight: bold;
 	position: relative;
-    display: flex;
-    justify-content: space-around;
-    top: 196px;
+	display: flex;
+	justify-content: space-around;
+	top: 198px;
 	background-color:#282828;
 	height: 30px;
 	text-transform: uppercase;
@@ -344,28 +347,6 @@ ul.thin li { margin: 0 0; padding: 0; }
 #modbar_m { position: relative; top: 13px; width: 240px; float: right; margin-right: 38px; z-index: 2; }
 #modbar_m .alertbar { text-align: center; background-color: #e1e1e1; padding: 6px; color: #62768a; }
 
-#userinfo_stats {
-	position: absolute;
-	top: 70px;
-	width: 220px;
-	height: 60px;
-	padding: 10px;
-	background-color: rgba(250,255,237,0.1);
-	color: #efefef;
-	z-index: 2;
-}
-
-#userinfo_stats li {display: inline !important;position: absolute;width: 110px;}
-#userinfo_stats li:nth-child(even) { border: none !important; }
-#stats_seeding, #stats_ratio { top: 9px; }
-#stats_ratio { color: #c5c5c5; }
-#fl_tokens span a { color: #efefef; }
-#stats_leeching, #stats_required { top: 32px; }
-#stats_ratio, #stats_required { left: 130px; }
-#fl_tokens { top: 55px; }
-.my_demBuffer { left: 130px; top: 55px; }
-#stats_buffer { top: 55px; }
-
 .r00 { color: #ff0000; }
 .r01 { color: #ff1300; }
 .r02 { color: #ff1300; }
@@ -380,12 +361,6 @@ ul.thin li { margin: 0 0; padding: 0; }
 .r20 { color: #418b00; }
 .r50 { color: #16b149; }
 .r99 { color: #418b00; }
-
-#nav_userinfo a {
-	max-width: 176px;
-	height: 60px;
-	display: block;
-}
 
 #userinfo img {
 	margin-top: -5px;
@@ -471,6 +446,26 @@ ul.thin li { margin: 0 0; padding: 0; }
 #nav_hnr a { margin-left: 0 ! important; }
 
 #userinfo #userinfo_minor li:hover, #userinfo #userinfo_major li:hover { background-color: #62768a ; }
+
+#userinfo_stats {
+  position: absolute;
+  display: inline;
+  top: 168px;
+  width: 988px;
+}
+
+ul#userinfo_stats li {
+  display: inline;
+  margin: 0 0.3em;
+  vertical-align: middle;
+  padding: 6px;
+  color: #d1d1d1;
+}
+
+#userinfo_stats li a {
+  font-weight: bold;
+  color: #e1e1e1;
+}
 
 #searchbars {
 	position: fixed;

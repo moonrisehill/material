@@ -293,59 +293,19 @@ ul.thin li { margin: 0 0; padding: 0; }
 }
 
 #alerts {
-	position: relative;
-	top: 40px;
-	width: 160px;
-	height: 80px;
-	text-align: center;
-	margin: 0 auto;
-	z-index: 1;
+	position: fixed;
+	right: 0;
+	top: 0;
+	float: right;
+	z-index: 20;
+	line-height: 28px;
 }
 
 #alerts .alertbar {
-	position: absolute;
-	display: table;
-	text-align: center;
-	background-color: #e1e1e1;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-	padding: 6px 10px;
+	background-color: #cacaca;
+	color: #303030;
+	padding: 0 14px;
 }
-
-#modbar {
-	position: absolute;
-	background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/alrt.png');
-	background-repeat: no-repeat;
-	background-size: 11px;
-	width: 11px;
-	height: 11px;
-	overflow: hidden;
-	text-align: center;
-	color: transparent;
-	top: 89px;
-	margin-left: 27px;
-	transition: all 0.5s ease-in-out 0s;
-	z-index: 10;
-}
-
-#modbar:hover {
-	padding: 10px 7px 0 0;
-	height: auto;
-	min-height: 26px;
-	width: 205px;
-	background-size: 0%;
-	background-color: #e1e1e1;
-	color: #62768a;
-}
-
-#modbar .alertbar { width: 200px; }
-#modbar .alertbar a { color: inherit; }
-#modbar .alertbar a:hover { color: #7c9aa5; }
-#modbar .alertbar:nth-child(2n+1) { float: right; }
-
-#modbar_m { position: relative; top: 13px; width: 240px; float: right; margin-right: 38px; z-index: 2; }
-#modbar_m .alertbar { text-align: center; background-color: #e1e1e1; padding: 6px; color: #62768a; }
 
 .r00 { color: #ff0000; }
 .r01 { color: #ff1300; }
@@ -1149,95 +1109,7 @@ input[type="radio"]:checked:after { position: absolute; top: 3px; left: 3px; wid
 	padding-right: 14px;
 }
 
-.label_info:hover {
-	background: #252525;
-}
-
-.eventTitle {
-	color: #62768a;
-	text-align: center;
-	font-size: 1.5em;
-	letter-spacing: 2px;
-}
-
-.typeOfTorrentsAffected {
-	text-align: center;
-	font-size: 1.1em;
-}
-
-.eventHR {
-	border: 0;
-	height: 1px;
-	background-image: -webkit-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
-	background-image: -moz-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
-	background-image: -ms-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
-	background-image: -o-linear-gradient(left, rgba(255,255,255,0), rgba(255,255,255,0.75), rgba(255,255,255,0));
-}
-
-.affectedByEventList {
-	list-style-type: none;
-	text-align: center;
-}
-
-.affectedByEventList ul {
-	display: none;
-}
-
-.affectedByEventList li {
-	font-size: 1.2em;
-}
-
-.affectedByEventList li ul li {
-	font-size: 0.9em;
-	text-align: left;
-}
-
-.affectedByEventList li:hover ul {
-	display: block;
-}
-
-.eventBonusList {
-	list-style-type: none;
-	text-align: center;
-}
-
-.eventBonusItem {
-	font-size: 1.1em;
-	line-height: 1.2em;
-}
-
-.eventTime {
-	text-align: center;
-}
-
-.countdown_row {
-	clear: both;
-	width: 100%;
-	padding: 0 2px;
-	text-align: center;
-}
-
-.countdown_show3 .countdown_section {
-	width: 32.5%;
-}
-
-.countdown_show4 .countdown_section {
-	width: 24.5%;
-}
-
-.countdown_section {
-	display: block;
-	float: left;
-	font-size: 100%;
-	text-align: center;
-}
-
-.countdown_amount {
-	color: #62768a;
-	font-size: 200%;
-}
-
-#content, #searchbars input, .box, .box2, .colhead, .colhead_dark, .head, #userinfo_stats, #menu, #menu *, #alerts .alertbar, #modbar_m .alertbar, #modbar, select {-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
+#content, #searchbars input, .box, .box2, .colhead, .colhead_dark, .head, #userinfo_stats, #menu, #menu *, select {-webkit-border-radius: 2px;-moz-border-radius: 2px;border-radius: 2px;}
 table tr:first-child td:first-child { border-top-left-radius: 2px; border-bottom-left-radius: 2px; -webkit-border-top-left-radius: 2px; -webkit-border-bottom-left-radius: 2px; -moz-border-radius-topleft: 2px; -moz-border-radius-bottomleft: 2px; }
 table tr:first-child td:last-child { border-top-right-radius: 2px; border-bottom-right-radius: 2px; -webkit-border-top-right-radius: 2px; -webkit-border-bottom-right-radius: 2px; -moz-border-radius-topright: 2px; -moz-border-radius-bottomright: 2px; }
 table tr:last-child td:first-child { border-bottom-left-radius: 2px; -webkit-border-bottom-left-radius: 2px; -moz-border-radius-bottomleft: 2px; }

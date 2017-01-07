@@ -389,13 +389,14 @@ ul.thin li { margin: 0 0; padding: 0; }
 #userinfo #userinfo_minor #nav_inbox { margin-top: 28px; background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/pm.png'); }
 #userinfo #userinfo_minor #nav_staffinbox { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/staffpm.png'); }
 #userinfo #userinfo_minor #nav_uploaded { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/uploads.png'); }
-#userinfo #userinfo_minor #nav_bookmarks { position: absolute; background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/bookmarks.png'); }
+#userinfo #userinfo_minor #nav_bookmarks { position: absolute; background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/bookmarks.png'); background-position: 0; }
 #userinfo #userinfo_minor #nav_notifications { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/noti.png'); }
 #userinfo #userinfo_minor #nav_subscriptions { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/sub.png'); }
 #userinfo #userinfo_minor #nav_friends { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/friends.png'); }
 #userinfo #userinfo_minor #nav_comments { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/comments.png'); }
+#userinfo #userinfo_minor #posts { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/posts.png'); }
 
-#userinfo #userinfo_major #nav_upload { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/upload.png'); }
+#userinfo #userinfo_major #nav_upload { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/upload.png'); background-position: 0; }
 #userinfo #userinfo_major #nav_better { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/better.png'); }
 #userinfo #userinfo_major #nav_invite { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/invites.png'); }
 #userinfo #userinfo_major #nav_bonus { width: 153px; overflow: hidden; text-overflow: ellipsis; -o-text-overflow: ellipsis; }

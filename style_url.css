@@ -394,7 +394,7 @@ ul.thin li { margin: 0 0; padding: 0; }
 #userinfo #userinfo_minor #nav_subscriptions { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/sub.png'); }
 #userinfo #userinfo_minor #nav_friends { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/friends.png'); }
 #userinfo #userinfo_minor #nav_comments { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/comments.png'); }
-#userinfo #userinfo_minor #posts { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/posts.png'); }
+#userinfo #userinfo_minor #nav_posts { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/posts.png'); }
 
 #userinfo #userinfo_major #nav_upload { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/upload.png'); background-position: 0; }
 #userinfo #userinfo_major #nav_better { background-image: url('https://raw.githubusercontent.com/moonrisehill/material/master/better.png'); }
